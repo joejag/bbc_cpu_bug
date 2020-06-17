@@ -15,3 +15,4 @@ CSS animation with 'infinite' set uses a lot of CPU, it is a performance hog any
 
 - Use an animated gif instead (2.6% CPU usage)
 - Notice adding additional versions doesn't scale the CPU up
+- If the pulse isn't shown it uses zero CPU, the CSS version still uses a load of CPU even when off page
