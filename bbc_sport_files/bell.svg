@@ -1,0 +1,189 @@
+<svg id="Bell" width="3.75em" height="2.5em" viewBox="-14 -4 60 40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <style type="text/css">
+        <![CDATA[ 
+
+            :root {
+                --animationLength: 1.5s;
+            }
+
+            .bow-animation {
+                animation: Bow var(--animationLength);
+                -webkit-transform-origin: 50% 8%;
+                -moz-transform-origin: 50% 8%;
+                -ms-transform-origin: 50% 8%;
+                transform-origin: 50% 8%;
+            }
+
+            .clapper-animation {
+                animation: Clapper var(--animationLength);
+                transform-origin: 50% 8%;
+                -webkit-transform-origin: 50% 8%;
+                -moz-transform-origin: 50% 8%;
+                -ms-transform-origin: 50% 8%;
+                transform-origin: 50% 8%;
+            }
+                
+            
+            .badge-animation {
+                transform: scale(0);
+                animation: Badge var(--animationLength) forwards;
+                -webkit-transform-origin: 50% 50%;
+                -moz-transform-origin: 50% 50%;
+                -ms-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                background-color: #006def
+            }
+
+            .bow-animation, .clapper-animation, .badge-animation {
+                transform-box: fill-box;
+                animation-fill-mode: forwards;
+                animation-delay: 2.5s;
+            }
+            
+            @keyframes Bow{
+                0% { 
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                    animation-timing-function: ease-out;
+                }
+                15% { 
+                    -webkit-transform: rotate(-45deg); 
+                    -moz-transform: rotate(-45deg); 
+                    -ms-transform: rotate(-45deg); 
+                    transform: rotate(-45deg); 
+                    animation-timing-function: ease-out; 
+                }
+                40% { 
+                    -webkit-transform: rotate(30deg); 
+                    -moz-transform: rotate(30deg); 
+                    -ms-transform: rotate(30deg); 
+                    transform: rotate(30deg); 
+                    animation-timing-function: ease-out; 
+                }
+                60% { 
+                    -webkit-transform: rotate(-20deg); 
+                    -moz-transform: rotate(-20deg); 
+                    -ms-transform: rotate(-20deg);
+                    transform: rotate(-20deg); 
+                    animation-timing-function: ease-out; 
+                }
+                75% { 
+                    -webkit-transform: rotate(10deg); 
+                    -moz-transform: rotate(10deg); 
+                    -ms-transform: rotate(10deg);
+                    transform: rotate(10deg); 
+                    animation-timing-function: ease-out; 
+                }
+                90% { 
+                    -webkit-transform: rotate(-6deg); 
+                    -moz-transform: rotate(-6deg); 
+                    -ms-transform: rotate(-6deg);
+                    transform: rotate(-6deg); 
+                    animation-timing-function: ease-out; 
+                }
+                100% { 
+                    -webkit-transform: rotate(0deg); 
+                    -moz-transform: rotate(0deg); 
+                    -ms-transform: rotate(0deg);
+                    transform: rotate(0deg); 
+                    animation-timing-function: ease-out; 
+                }
+            }
+            
+            @keyframes Clapper{
+                0% { 
+                    -webkit-transform: rotate(0deg); 
+                    -moz-transform: rotate(0deg); 
+                    -ms-transform: rotate(0deg);
+                    transform: rotate(0deg);  
+                    animation-timing-function: ease-out;
+                }
+                10% { 
+                    -webkit-transform: rotate(-18deg); 
+                    -moz-transform: rotate(-18deg); 
+                    -ms-transform: rotate(-18deg);
+                    transform: rotate(-18deg); 
+                    animation-timing-function: ease-out; 
+                }
+                20% { 
+                    -webkit-transform: rotate(-45deg); 
+                    -moz-transform: rotate(-45deg); 
+                    -ms-transform: rotate(-45deg); 
+                    transform: rotate(-45deg); 
+                    animation-timing-function: ease-out; 
+                }
+            
+                43% { 
+                    -webkit-transform: rotate(40deg); 
+                    -moz-transform: rotate(40deg); 
+                    -ms-transform: rotate(40deg); 
+                    transform: rotate(40deg); 
+                    animation-timing-function: ease-out; 
+                }
+                60% { 
+                    -webkit-transform: rotate(-40deg); 
+                    -moz-transform: rotate(-40deg); 
+                    -ms-transform: rotate(-40deg); 
+                    transform: rotate(-40deg); 
+                    animation-timing-function: ease-out; 
+                }
+            
+                80% { 
+                    -webkit-transform: rotate(26deg); 
+                    -moz-transform: rotate(26deg); 
+                    -ms-transform: rotate(26deg); 
+                    transform: rotate(26deg);  
+                    animation-timing-function: ease-out; 
+                }
+                90% { 
+                    -webkit-transform: rotate(-3deg); 
+                    -moz-transform: rotate(-3deg); 
+                    -ms-transform: rotate(-3deg); 
+                    transform: rotate(-3deg); 
+                    animation-timing-function: ease-out; 
+                }
+                100% { 
+                    -webkit-transform: rotate(0deg); 
+                    -moz-transform: rotate(0deg); 
+                    -ms-transform: rotate(0deg);
+                    transform: rotate(0deg); 
+                    animation-timing-function: ease-out; 
+                }
+            }
+            
+            @keyframes Badge{
+                0% {transform: scale(0);
+                    animation-timing-function: ease; 
+                }
+                66% {transform: scale(1);
+                    animation-timing-function: ease; 
+                } 
+                100% {transform: scale(1);
+                    animation-timing-function: ease; 
+                } 
+            }
+            ]]>
+            
+            </style>
+        <mask id="bow-mask" >
+            <g class="bow-animation"> 
+                <rect fill="white"  x="-16" y="-2" width="64" height="40" />
+                <path fill="black" d="M20,-2 L12,-2 L12,1.184 L11.8752028,1.22861811 C7.42095587,2.85632836 4.24451974,7.02581391 4.00246088,11.900816 L4,17.333 L-4,28 L36,28 L28,17.333 L28,12 L27.9813456,11.6964411 C27.6244379,6.85572548 24.4733912,2.80548115 20.0944107,1.21768827 L20,1.184 L20,-2 Z"></path>
+            </g>
+        </mask>
+    </defs>
+    <g mask="url(#bow-mask)">
+        <g class="clapper-animation">
+            <polygon points="12 32 20 32 20 21 17 21 17 1 15 1 15 21 12 21"></polygon>
+        </g>   
+    </g>   
+    <g class="bow-animation">
+        <path d="M26,18 L26,12 C25.771,7.388 22.405,3.595 18,2.701 L18,0 L14,0 L14,2.701 C9.595,3.595 6.229,7.388 6,12 L6,18 L0,26 L32,26 L26,18 Z"></path>
+    </g>
+    <g class="badge-animation">
+        <circle fill="#006def" cx="34" cy="0" r="3.5"/>
+    </g>  
+</svg>

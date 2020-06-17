@@ -1,0 +1,217 @@
+<svg id="tick" width="100" height="100" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <style type="text/css">
+        <![CDATA[ 
+
+            :root {
+                --animationLength: 1.5s;
+            }
+            
+            .outer-circle-animation {
+                animation: outer-circle var(--animationLength) linear;
+                -webkit-transform-origin: 50% 50%;
+                -moz-transform-origin: 50% 50%;
+                -ms-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+            }
+    
+            .crossbar-animation{
+                animation: crossbar-transfrom var(--animationLength) linear;
+                stroke-dasharray: 20 70;
+                stroke-dashoffset: 0;   
+                animation-fill-mode: forwards;
+            }
+
+            .stem-rotate{
+                animation: stem-rotate var(--animationLength) linear;
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                transform: rotate(0deg);          
+                /* -webkit-transform: rotate(47deg) scaleY(1) translate(22, 19);
+                -moz-transform: rotate(47deg) scaleY(1) translate(22, 19); 
+                -ms-transform: rotate(47deg) scaleY(1) translate(10, 19);
+                transform: rotate(47deg) scaleY(1) translate(9px, -7px);    */
+                animation-fill-mode: forwards;
+            }
+
+            .stem-scale{
+                animation: stem-scale var(--animationLength) linear;
+                -webkit-transform: scaleY(1);
+                -moz-transform: scaleY(1);
+                -ms-transform: scaleY(1);
+                transform: scaleY(1);          
+                /* -webkit-transform: rotate(47deg) scaleY(1) translate(22, 19);
+                -moz-transform: rotate(47deg) scaleY(1) translate(22, 19); 
+                -ms-transform: rotate(47deg) scaleY(1) translate(10, 19);
+                transform: rotate(47deg) scaleY(1) translate(9px, -7px);    */
+                animation-fill-mode: forwards;
+            }
+
+            .stem-translate{
+                animation: stem-translate var(--animationLength) linear;      
+                /* -webkit-transform: rotate(47deg) scaleY(1) translate(22, 19);
+                -moz-transform: rotate(47deg) scaleY(1) translate(22, 19); 
+                -ms-transform: rotate(47deg) scaleY(1) translate(10, 19);
+                transform: rotate(47deg) scaleY(1) translate(9px, -7px);    */
+                animation-fill-mode: forwards;
+            }
+            
+            .scale-animation{
+                animation: scale-transform var(--animationLength) linear;
+                -webkit-transform-origin: 50% 50%;
+                -moz-transform-origin: 50% 50%;
+                -ms-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+            }
+    
+            .stroke-animation{
+                animation: stroke-thickness var(--animationLength) linear;
+                animation-fill-mode: forwards;
+            }
+
+            .stroke-animation {
+                transform-box: fill-box;
+                animation-fill-mode: forwards;
+                animation-delay: 2.5s;
+            }
+
+            .outer-circle-animation, .crossbar-animation, .crossbar-animation, .stroke-animation, .stem-scale, .stem-rotate, .stem-translate, .scale-animation {
+                animation-fill-mode: forwards;
+                transform-box: fill-box;
+                animation-delay: 1s;
+            }
+            
+            @keyframes stem-rotate{
+                0% {
+                    transform: rotate(0deg);            
+                    animation-timing-function: ease; 
+                }
+                40%, 100% {                        
+                    transform: rotate(47deg) translate(9px, -7px);         
+                    animation-timing-function: ease; 
+                }
+            }
+
+            @keyframes stem-scale{
+                0% {
+                    transform:scaleY(1);            
+                    animation-timing-function: ease-out; 
+                }
+                20% {
+                    transform:scaleY(0.3);           
+                    animation-timing-function: ease-out; 
+                }
+                40%, 100% {                        
+                    transform: scaleY(1);         
+                    animation-timing-function: ease-out; 
+                }
+            }
+
+            @keyframes stem-translate{
+                0% {
+                    transform: translate(0px, 0px);            
+                    animation-timing-function: ease-out; 
+                }
+                20% {
+                    transform: translate(0px, 5px);           
+                    animation-timing-function: ease-out; 
+                }
+                40%, 100% {                        
+                    transform: translate(0px, 0px);         
+                    animation-timing-function: ease-out; 
+                }
+            }
+    
+            @keyframes stroke-thickness{
+                    0% {
+                        stroke-width: 2.5;
+                        stroke:#000;
+                        animation-timing-function: ease; 
+                    }
+                    44% {stroke-width: 2.5;
+                        stroke:#000;
+                        animation-timing-function: ease; 
+                    }
+                    45% {stroke-width: 5;
+                        stroke:#006def;
+                        animation-timing-function: ease;  
+                    }
+                    100% {stroke-width: 4;
+                        stroke:#006def;
+                        animation-timing-function: ease; 
+                    }
+            }
+    
+            @keyframes outer-circle{
+                    0% {transform: scale(0);
+                        stroke-width: 0;
+                        animation-timing-function: ease; 
+                    }
+                    44% {transform: scale(0.8);
+                        stroke-width: 0;
+                        animation-timing-function: ease-out; 
+                    }
+                    45% {transform: scale(0.9);
+                        stroke-width: 4;
+                        animation-timing-function: ease; 
+                    }
+                    100% {transform: scale();
+                        stroke-width: 0;
+                        animation-timing-function: ease; 
+                    }
+            }
+    
+            @keyframes scale-transform{
+                    0% {transform: scale(1);
+                        animation-timing-function: ease; 
+                    }
+                    40% {transform: scale(1);
+                        animation-timing-function: ease-in; 
+                    }
+                    45% {transform: scale(1.2);
+                        animation-timing-function: ease-in; 
+                    }
+                    75% {transform: scale(1);
+                        animation-timing-function: ease-in; 
+                    }
+            }
+    
+            @keyframes crossbar-transfrom{
+                    0% {
+                        stroke-dasharray: 20 70;
+                            stroke-dashoffset: 0;                   
+                        animation-timing-function: ease-out; 
+                    }
+                    40%, 100% {                        
+                        stroke-dasharray: 10 70;
+                        stroke-dashoffset: -70;                             
+                        animation-timing-function: ease-in; 
+                    }
+            }
+            ]]>
+            
+            </style>
+        <mask id="burst-mask">
+            <circle class="outer-circle, outer-circle-animation" cx="25" cy="25" r="25" fill="none" stroke="white" stroke-width="0" />
+        </mask>
+    </defs>
+    <g id="burst" stroke="#006DEF" mask="url(#burst-mask)">
+        <path d="M25,0.490196078 L25,49.5098039 M0.490196078,25 L49.5098039,25 M7.66895144,42.3310486 L42.3310486,7.66895144 M7.66895144,7.66895144 L42.3310486,42.3310486 M15.6205041,47.6441062 L34.3794959,2.35589381 M15.6205041,2.35589381 L34.3794959,47.6441062 M2.35589381,34.3794959 L47.6441062,15.6205041 M2.35589381,15.6205041 L47.6441062,34.3794959"></path>
+    </g>
+    <g class="scale-animation">
+        <g stroke="#000000" class="stroke-animation" stroke-linecap="square" stroke-width="2.5" fill="none" fill-rule="evenodd" >
+            <path class="crossbar-animation" d="M15.5,25 C27.8333333,25 35,25 37,25 C43,25 41.2744103,13.9873736 32,12 C25,10.5 15,11.25 12.5,17 C11.3994345,19.5313006 12.3994345,22.1979673 15.5,25 L22,31"></path>
+            <g class="stem-translate">
+                <g class="stem-rotate"><line class="stem-scale" x1="25.5" y1="15" x2="25.5" y2="35"></line></g>
+            </g>
+        </g>
+    </g>            
+</svg>
+
+
+
+        
+        
+        
+        
