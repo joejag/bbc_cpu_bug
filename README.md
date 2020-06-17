@@ -1,6 +1,6 @@
 the_problem.html file show the baseline CPU at 16%.
 
-CSS animation with 'infinite' set uses a lot of CPU, it is a performance hog anyway you use it. Every [example](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) of [using](https://thoughtbot.com/blog/css-animation-for-beginners) it [online](https://www.tutorialrepublic.com/codelab.php?topic=css3&file=animation-property) has the same issue
+CSS animation with 'infinite' set for the `animation-iteration-count` property uses a lot of CPU, it is a performance hog anyway you use it. Every [example](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) of [using](https://thoughtbot.com/blog/css-animation-for-beginners) it [online](https://www.tutorialrepublic.com/codelab.php?topic=css3&file=animation-property) has the same issue
 
 # Things I tried which made no difference
 
