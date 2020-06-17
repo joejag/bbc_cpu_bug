@@ -7,6 +7,7 @@ CSS animation with 'infinite' set uses a lot of CPU, it is a performance hog any
 - Using `<canvas>` instead of an SVG
 - Using SVG animation via: `<animate>` within the `<circle>`
 
-# Things that do work (the_solution.html)
+# the_solution.html
 
 - Use an animated gif instead (2.6% CPU usage)
+- Notice adding additional versions doesn't scale the CPU up
