@@ -6,6 +6,7 @@ CSS animation with 'infinite' set uses a lot of CPU, it is a performance hog any
 
 - Using `<canvas>` instead of an SVG
 - Using SVG animation via: `<animate>` within the `<circle>`
+- Drawing the circle with CSS rather than a SVG
 
 # Things I couldn't get to work
 
