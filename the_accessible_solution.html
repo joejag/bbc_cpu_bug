@@ -1,0 +1,24 @@
+<style>
+  @keyframes gs-pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .gs-c-live-pulse__icon-center {
+    will-change: opacity;
+    animation: gs-pulse 1.7s ease 3;
+  }
+</style>
+
+<body>
+  <svg aria-hidden="true" viewBox="0 0 32 32">
+    <path d="M16 4c6.6 0 12 5.4 12 12s-5.4 12-12 12S4 22.6 4 16 9.4 4 16 4zm0-4C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0z"></path>
+    <circle class="gs-c-live-pulse__icon-center" cx="16" cy="16" r="8.5"></circle>
+  </svg>
+</body>
